@@ -1,8 +1,7 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "description": "",
-  "main": "calculaParcelas.js",
+  "description": "Funções de cálculo e testes",
   "scripts": {
     "test-desconto": "node ../tests/desconto.test.js",
     "test-parcelas": "node ../tests/parcelas.test.js"

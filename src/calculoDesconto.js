@@ -3,13 +3,13 @@ let desconto  = ''
 
 /**
  * 
- * @param valor: Valor da compra
- * @param desconto: Percentual de desconto 
- * @returns O valor da compra com o desconto aplicado
+ * @param valor Valor da compra
+ * @param desconto Percentual de desconto 
+ * @returns valor da compra com o desconto aplicado
  */
 
 function compraComDesconto(valor, desconto){
-    if(valor <= 0 || desconto >= 100){
+    if(valor <= 0 || desconto >= 100 || desconto <= 0){
         console.log('Revise os parâmetros informados e tente novamente.')
         return
     }

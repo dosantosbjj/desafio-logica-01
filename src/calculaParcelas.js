@@ -5,9 +5,9 @@ let juros = ''
 
 /**
  * 
- * @param valor: Valor da compra
- * @param taxa : Taxa de juro 
- * @returns valorCorrigido: Valor da compra com a taxa de juro aplicada
+ * @param valor Valor da compra
+ * @param taxa Taxa de juro 
+ * @returns Valor da compra com a taxa de juro aplicada se for o caso
  */
 function calculaJuro(valor, taxa){
     if(valor <= 0 || taxa <=0){
@@ -21,13 +21,18 @@ function calculaJuro(valor, taxa){
 
 /**
  * 
- * @param valor: Valor do produto
- * @param parcelas: Número de parcelas (se for maior que 5 será taxado em 10%)
- * @returns valorParcela: retorna o valor de cada parcela
+ * @param valor Valor do produto
+ * @param parcelas Número de parcelas (se for maior que 5 será taxado em 10%)
+ * @returns valor de cada parcela
  */
 function calculaParcelas(valor, parcelas){
     if(valor <= 0 || parcelas <= 0){
         console.log('Verifique os valores informados e tente novamente.')
+        return
+    }
+
+    if(parcelas >= valor){
+        console.log('O número de parcelas deve ser menor que o valor. Tente novamente')
         return
     }
 
