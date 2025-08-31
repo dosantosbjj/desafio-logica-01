@@ -1,0 +1,13 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculaParcelas.js",
+  "scripts": {
+    "test-desconto": "node ../tests/desconto.test.js",
+    "test-parcelas": "node ../tests/parcelas.test.js"
+  },
+  "type": "commonjs",
+  "author": "Lucas Santos",
+  "license": "ISC"
+}
